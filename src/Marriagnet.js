@@ -99,8 +99,8 @@ export default class Marriagnet extends Component{
             <Provider store={store}>
                 <Router sceneStyle={{backgroundColor: 'white'}}>
                     <Scene key='root' hideNavBar>
-                        <Scene key='App'
-                         component={App}
+                        <Scene key='Logout'
+                         component={Logout}
                          type='replace'
                          initial/>
 
@@ -139,6 +139,12 @@ export default class Marriagnet extends Component{
                              iconName={'gear'}
                              hideNavBar
                              component={Profile}/>
+                            <Scene key='Logout'
+                             title={'Logout'}
+                             icon={TabIcon}
+                             iconName={'gear'}
+                             hideNavBar
+                             component={Logout}/>
                         </Scene>
                     </Scene>
                 </Router>

@@ -3,8 +3,10 @@ module.exports = {
   backend: {
     hapiRemote: false,
     hapiLocal: false,
-    parseRemote: true,
-    parseLocal: false
+    parseRemote: false,
+    parseLocal: false,
+    myserverLocal: true,
+    myserverRemote: false
   },
   HAPI: {
     local: {
@@ -21,6 +23,14 @@ module.exports = {
     },
     remote: {
       url: 'https://snowflake-parse.herokuapp.com/parse'   // match SERVER_URL in parse-server's index.js
+    }
+  },
+  MYSERVER: {
+    local: {
+      url: 'http://www.marriagnet.com/'
+    },
+    remote: {
+      url: ''
     }
   }
 }

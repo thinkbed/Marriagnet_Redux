@@ -103,6 +103,9 @@ class Logout extends Component {
 		            isDisabled={!this.props.auth.form.isValid || this.props.auth.form.isFetching}
 		            onPress={onButtonPress.bind(self)}
 		            buttonText={I18n.t('Snowflake.logout')} />
+		           <FormButton
+		            onPress={onButtonPress.bind(self)}
+		            buttonText={I18n.t('Snowflake.logout')} />
 		        </View>
 		    </View>
 		)

@@ -125,6 +125,7 @@ export function logout() {
 	
 	return dispatch => {
 		dispatch(logoutRequest())
+    appAuthToken.deleteSessionToken()
 		return appAuthToken.getSessionToken()
 		.then( (token) => {
 			return BackendFactory(token).logout()
